@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zapremina valjka</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+
+               function povrsina_baze(r) {
+                    return r * r * 3.14;
+                   
+               }
+
+               function povrsina_omotaca(r, h) {
+                    return 2 * r * Math.PI * h;
+               }
+
+               function povrsina_valjka(r, h) {
+                    return 2 * povrsina_baze(r) + povrsina_omotaca(r, h);
+               }
+
+               var x = prompt("Unesite poluprecnik valjka (r):");
+
+               alert("Povrsina baze valjka je " + povrsina_baze(x));
+
+               var y = prompt("Unesite visinu valjka (h):");
+
+               alert("Povrsina omotaca valjka je " + povrsina_omotaca(x, y));
+
+               alert("Povrsina celog valjka je " + povrsina_valjka(x, y));
+
+          </script> 
+</body>
+</html>
